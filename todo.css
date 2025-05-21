@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #222;
+    width: 100%;
+    height: max-content;
+}
+h1 {
+    margin: 20px 0px 20px 30px;
+}
+.container {
+    width: max-content;
+    height: fit-content;
+    margin: 50px auto;
+}
+.input-container {
+    /* position: relative; */
+    display: flex;
+    gap: 5px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.input-container #input-box {
+    width: 300px;
+    height: 40px;
+    background: rgb(94, 93, 93);
+    outline: 0;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 10px;
+}
+/* #input-box:focus {
+    outline: 1px solid #fff;
+} */
+
+#add-task {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: rgb(2, 212, 2);
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+}
+#add-task:hover {
+    background: rgb(1, 190, 1);
+}
+
+.task-container {
+    gap: 10px;
+    width: 400px;
+    position: relative;
+    margin-bottom: 100px;
+
+}
+.task-container .task {
+    width: 80%;
+    height: 100px;
+    background: rgb(90, 90, 90);
+    color: #fff;
+    padding: 10px;
+}
+
+.task-container button {
+    width: 50px;
+    height: 30px;
+    margin: 5px 10px 20px 0;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 20px;
+    /* position: absolute; */
+    /* right: 0; */
+}
+.done-task {
+    background:  rgb(2, 212, 2);
+}
+.done-task:hover {
+    background:rgb(1, 190, 1);
+}
+.delete {
+    background: rgb(240, 15, 15);
+}
+.delete:hover {
+    background: red;
+}
+
+
+/* Mobile phones (up to 600px) */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container #input-box {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #add-task {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    .task-container {
+        width: 100%;
+    }
+
+    .task-container .task {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .task-container button {
+        font-size: 16px;
+        width: 40px;
+        height: 28px;
+    }
+}
+
+/* Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 80%;
+    }
+
+    .input-container #input-box {
+        width: 60%;
+    }
+
+    #add-task {
+        width: 60px;
+    }
+
+    .task-container {
+        width: 90%;
+    }
+
+    .task-container .task {
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+/* Larger screens (901px and up) */
+@media (min-width: 901px) {
+    .container {
+        width: max-content;
+    }
+
+    .task-container {
+        width: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
